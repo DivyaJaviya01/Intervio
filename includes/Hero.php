@@ -1,32 +1,32 @@
 <?php
-// Hero section with gradient background
+// Hero section with refined SaaS styling
 ?>
-<!-- Hero Section with Gradient -->
-<section class="hero-section py-5" style="background: linear-gradient(to bottom right, #000000 70%, #1a1a1a 100%);">
+<!-- Hero Section -->
+<section class="hero-section py-5" style="background-color: #D8E4EB;">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <h1 class="display-4 fw-bold mb-3" style="color: #ffffff;">
+                <h1 class="display-4 fw-bold mb-3" style="color: #2D4650; line-height: 1.2;">
                     Ace Your Interviews
                 </h1>
-                <p class="lead text-light mb-4">
+                <p class="lead mb-4" style="color: #647880; line-height: 1.6;">
                     Prepare for your dream job with our comprehensive interview platform. 
                     Practice mock aptitude tests, get placement drive insights, and boost your confidence.
                 </p>
                 <div class="d-flex gap-3">
-                    <a href="auth/register.php" class="btn btn-light px-4 py-2" style="border-radius: 30px;">
+                    <a href="auth/register.php" class="btn px-4 py-2" style="background-color: #2D4650; color: #FFFFFF; border-radius: 6px; font-weight: 500; box-shadow: 0 2px 4px rgba(45, 70, 80, 0.2);">
                         Get Started
                     </a>
-                    <a href="#" class="btn btn-outline-light px-4 py-2" style="border-radius: 30px;">
+                    <a href="#" class="btn px-4 py-2" style="border: 2px solid #647880; color: #647880; border-radius: 6px; font-weight: 500; background-color: transparent;">
                         Learn More
                     </a>
                 </div>
             </div>
             <div class="col-lg-6 text-center">
-                <div style="width: 100%; height: 300px; background: rgba(255, 255, 255, 0.05); border-radius: 20px; display: flex; align-items: center; justify-content: center; border: 2px dashed rgba(255, 255, 255, 0.3);">
-                    <div class="text-light">
-                        <h3>Interactive Demo</h3>
-                        <p class="mb-0">Visualization Area</p>
+                <div style="width: 100%; height: 300px; background: linear-gradient(135deg, #FFFFFF 0%, #f8f9fa 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(45, 70, 80, 0.1); border: 1px solid rgba(100, 120, 128, 0.1);">
+                    <div>
+                        <h3 style="color: #2D4650;">Interactive Demo</h3>
+                        <p class="mb-0" style="color: #647880;">Visualization Area</p>
                     </div>
                 </div>
             </div>
