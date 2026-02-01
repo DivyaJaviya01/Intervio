@@ -1,4 +1,3 @@
-<?php
-// Main entry point for the Intervio application
-echo "Welcome to Intervio!";
-?>
+<?php include 'includes/Header.php'; ?>
+<?php include 'includes/Hero.php'; ?>
+<?php include 'includes/Footer.php'; ?>
