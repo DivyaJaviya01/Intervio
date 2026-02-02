@@ -1,0 +1,293 @@
+/* Logo Slider Animation */
+.logo-slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.logo-track-container {
+    width: 90vw;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-track-container::before,
+.logo-track-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.logo-track-container::before {
+    left: 0;
+    background: linear-gradient(to right, #ffffff 0%, transparent 100%);
+}
+
+.logo-track-container::after {
+    right: 0;
+    background: linear-gradient(to left, #ffffff 0%, transparent 100%);
+}
+
+.logo-track {
+    display: flex;
+    width: calc(150px * 16);
+    animation: scroll 20s linear infinite;
+}
+
+.logo-item {
+    flex: 0 0 150px;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-150px * 8));
+    }
+}
+
+/* Pause animation on hover */
+.logo-slider:hover .logo-track {
+    animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo-track {
+        width: calc(120px * 16);
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-120px * 8));
+        }
+    }
+
+    .logo-item {
+        flex: 0 0 120px;
+        margin: 0 10px;
+    }
+}
+
+/* Placement Carousel Styling */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    opacity: 0.7;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-indicators button {
+    background-color: #647880;
+}
+
+.carousel-indicators button.active {
+    background-color: #D8E4EB;
+}
+
+.placement-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Superset Style Design */
+.superset-style {
+    position: relative;
+}
+
+.superset-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.superset-style:hover .superset-image {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+.superset-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 40%, transparent 100%);
+    color: white;
+    padding: 25px 20px 20px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: left;
+}
+
+.superset-badge {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    margin: 10px;
+}
+
+.superset-badge-primary {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.placement-content {
+    padding: 20px 0;
+}
+
+.placement-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.placement-role {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.placement-stats {
+    display: grid;
+    gap: 0px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    background: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    background: #f1f5f9;
+    border-color: #cbd5e1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.stat-icon {
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.stat-value {
+    font-size: 1.1rem;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.placement-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Image Overlay Styles */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+    color: white;
+    padding: 20px 15px 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: left;
+}
+
+.image-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #FFFFFF;
+}
+
+.image-subtitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #D8E4EB;
+    opacity: 0.9;
+}
+
+/* Enhanced Carousel Styles */
+
+
+.achievement-badge {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.achievement-badge:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+
+/* Animations */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+    .logo-item {
+        flex: 0 0 120px;
+        margin: 0 10px;
+    }
+}
