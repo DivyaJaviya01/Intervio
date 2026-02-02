@@ -1,7 +1,7 @@
 <?php include 'includes/Header.php'; ?>
 
 <!-- Hero Section -->
-<section class="hero-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 100px 0;">
+<section class="hero-section" style="color: #000000; padding: 100px 0;">
     <div class="container text-center">
         <h1 class="display-3 fw-bold mb-4">Upcoming Placement Drives</h1>
         <p class="lead mb-5">Discover exciting career opportunities with top companies</p>
@@ -10,6 +10,67 @@
                 <div class="input-group">
                     <input type="text" class="form-control form-control-lg" placeholder="Search companies, positions, or locations...">
                     <button class="btn btn-warning btn-lg" type="button">Search Drives</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Filter Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h3 class="text-center mb-4">Filter Drives</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label class="form-label">Company Type</label>
+                                <select class="form-select">
+                                    <option>All Companies</option>
+                                    <option>MNC</option>
+                                    <option>Startup</option>
+                                    <option>Product Based</option>
+                                    <option>Service Based</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="form-label">Job Type</label>
+                                <select class="form-select">
+                                    <option>All Types</option>
+                                    <option>Full Time</option>
+                                    <option>Internship</option>
+                                    <option>Part Time</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="form-label">Location</label>
+                                <select class="form-select">
+                                    <option>All Locations</option>
+                                    <option>Bangalore</option>
+                                    <option>Mumbai</option>
+                                    <option>Delhi</option>
+                                    <option>Pune</option>
+                                    <option>Hyderabad</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="form-label">Package Range</label>
+                                <select class="form-select">
+                                    <option>All Packages</option>
+                                    <option>0-5 LPA</option>
+                                    <option>5-10 LPA</option>
+                                    <option>10-15 LPA</option>
+                                    <option>15+ LPA</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary me-2">Apply Filters</button>
+                            <button class="btn btn-secondary">Reset</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -189,69 +250,8 @@
     </div>
 </section>
 
-<!-- Filter Section -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <h3 class="text-center mb-4">Filter Drives</h3>
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-3 mb-3">
-                                <label class="form-label">Company Type</label>
-                                <select class="form-select">
-                                    <option>All Companies</option>
-                                    <option>MNC</option>
-                                    <option>Startup</option>
-                                    <option>Product Based</option>
-                                    <option>Service Based</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label class="form-label">Job Type</label>
-                                <select class="form-select">
-                                    <option>All Types</option>
-                                    <option>Full Time</option>
-                                    <option>Internship</option>
-                                    <option>Part Time</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label class="form-label">Location</label>
-                                <select class="form-select">
-                                    <option>All Locations</option>
-                                    <option>Bangalore</option>
-                                    <option>Mumbai</option>
-                                    <option>Delhi</option>
-                                    <option>Pune</option>
-                                    <option>Hyderabad</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label class="form-label">Package Range</label>
-                                <select class="form-select">
-                                    <option>All Packages</option>
-                                    <option>0-5 LPA</option>
-                                    <option>5-10 LPA</option>
-                                    <option>10-15 LPA</option>
-                                    <option>15+ LPA</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <button class="btn btn-primary me-2">Apply Filters</button>
-                            <button class="btn btn-secondary">Reset</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Stats Section -->
-<section class="py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+<section class="py-5" style="background-color: #1e40af; color: white;">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-3 mb-4">

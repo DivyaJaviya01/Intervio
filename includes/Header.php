@@ -117,13 +117,19 @@
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Drives</a>
+                        <a class="nav-link" href="drives.php">Drives</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Preparation</a>
+                        <a class="nav-link" href="preparation.php">Preparation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Aptitude</a>
+                        <a class="nav-link" href="aptitude.php">Aptitude</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.php">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                 </ul>
                 
@@ -136,5 +142,3 @@
         </div>
     </nav>
 
-    <!-- Main Content Area -->
-    <main class="flex-grow-1">

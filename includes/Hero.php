@@ -14,10 +14,10 @@
                     Practice mock aptitude tests, get placement drive insights, and boost your confidence.
                 </p>
                 <div class="d-flex gap-3">
-                    <a href="auth/register.php" class="btn px-4 py-2" style="background-color: #000000; color: #FFFFFF; border-radius: 6px; font-weight: 500;">
+                    <a href="auth/register.php" class="btn px-4 py-2" style="background-color: #2563eb; color: #FFFFFF; border-radius: 6px; font-weight: 500;">
                         Get Started
                     </a>
-                    <a href="#" class="btn px-4 py-2" style="border: 2px solid #000000; color: #000000; border-radius: 6px; font-weight: 500; background-color: transparent;">
+                    <a href="#" class="btn px-4 py-2" style="border: 2px solid #2563eb; color: #2563eb; border-radius: 6px; font-weight: 500; background-color: transparent;">
                         Learn More
                     </a>
                 </div>
