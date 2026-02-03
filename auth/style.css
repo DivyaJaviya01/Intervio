@@ -1,0 +1,229 @@
+
+        body { 
+            background-color: #d2dde6;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%234dabf7" opacity="0.05"/><circle cx="20" cy="20" r="2" fill="%233498db" opacity="0.1"/><circle cx="50" cy="50" r="3" fill="%232980b9" opacity="0.15"/><circle cx="80" cy="80" r="2" fill="%233498db" opacity="0.1"/></svg>');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .card { 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            border: none;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        hr { 
+            margin: 2rem 0; 
+            border-top: 1px dashed #dee2e6;
+        }
+        
+        /* Form input animations */
+        .form-control, .form-select {
+            transition: all 0.3s ease;
+            border: 2px solid #e9ecef !important;
+            border-radius: 8px !important;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: #838e96 !important;
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15) !important;
+            background-color: #f8f9ff !important;
+        }
+        h3{
+            background: linear-gradient(to right, #2d4650, #647880);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;   
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;   
+        }
+        
+        /* Section headers animation */
+        h5 {
+            position: relative;
+            padding-bottom: 10px;
+            color: #2c3e50;
+        }
+        h5:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #3498db, #2980b9);
+            border-radius: 3px;
+        }
+        
+        /* Button effects */
+        .btn {
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        /* Radio button styling */
+        .form-check-input:checked {
+            background-color: #9BB7C1;
+            border-color: #9BB7C1;
+        }
+        
+        /* Input group styling */
+        .input-group {
+            transition: all 0.3s ease;
+        }
+        .input-group:focus-within {
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+            border-radius: 8px;
+        }
+        
+        /* Floating labels effect */
+        .floating-label {
+            position: relative;
+        }
+        .floating-label .form-control,
+        .floating-label .form-select {
+            padding-top: 1.25rem;
+        }
+        .floating-label label {
+            position: absolute;
+            top: 0.75rem;
+            left: 0.75rem;
+            color: #6c757d;
+            transition: all 0.2s ease;
+            pointer-events: none;
+            background: white;
+            padding: 0 5px;
+            margin-left: 5px;
+        }
+        .floating-label .form-control:focus + label,
+        .floating-label .form-control:not(:placeholder-shown) + label,
+        .floating-label .form-select:focus + label,
+        .floating-label .form-select:not([value=""]) + label {
+            top: -0.5rem;
+            left: 0.5rem;
+            font-size: 0.75rem;
+            color: #3498db;
+            background: white;
+        }
+        
+        /* Progress indicator */
+        .section-progress {
+            height: 4px;
+            background: #e9ecef;
+            border-radius: 2px;
+            overflow: hidden;
+            margin: 10px 0 20px 0;
+        }
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, #9BB7C1, #d2dde6);
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+        
+        /* Animation for form sections */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-section {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        /* Input validation styles */
+        .form-control.valid {
+            border-color: #28a745 !important;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right calc(0.375em + 0.1875rem) center;
+            background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+        }
+        
+        .form-control.invalid {
+            border-color: #dc3545 !important;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right calc(0.375em + 0.1875rem) center;
+            background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+        }
+        
+        /* Hover effects for form groups */
+        .form-group {
+            transition: all 0.2s ease;
+        }
+        .form-group:hover {
+            background-color: #d2dde6;
+            padding: 10px;
+            border-radius: 8px;
+            margin: -10px;
+        }
+        
+        /* Subtle background animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .card {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* Pulse animation for input fields when focused */
+        .form-control:focus {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 #789ea4; }
+            70% { box-shadow: 0 0 0 10px #789ea4; }
+            100% { box-shadow: 0 0 0 0 #789ea4; }
+        }
+        
+        /* Fade-in animation for form sections */
+        .animate-section {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+        }
+        
+        .animate-section.loaded {
+            opacity: 1;
+        }
+        .btn {
+            background-color: #9BB7C1;
+            border-color: #9BB7C1;
+            &:hover {
+                background-color: #789ea4;
+                border-color: #789ea4;
+            }
+        }
+    input[type="checkbox"] {
+        border: 2px solid #000 !important;
+        border-radius: 5px !important;
+        accent-color: #000 !important;
+    }
