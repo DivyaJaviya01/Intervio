@@ -2,10 +2,10 @@
 // Footer file for Intervio application
 $year = date('Y');
 ?>
-    </main>
+</main>
 
     <!-- SaaS Dark Footer -->
-    <footer class="pt-5 pb-4" style="background-color: #2D4650;">
+    <footer class="pt-5 pb-4 " style="background-color: #2D4650; margin: 0 -4rem;">
         <div class="container">
             <!-- Top Section: Brand + Quick Links -->
             <div class="row mb-4">

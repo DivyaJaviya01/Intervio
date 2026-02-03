@@ -351,11 +351,11 @@
     </div>
 </section>
 
-<!-- Why Colleges Love Superset Section -->
+<!-- Why Presidency University Loves Intervio Section -->
 <section class="py-5" style="background-color: #ffffff;">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="fw-bold" style="color: #000000; font-size: 2.5rem;">Why colleges love Superset</h2>
+            <h2 class="fw-bold" style="color: #000000; font-size: 2.5rem;">Why Presidency University loves Intervio</h2>
         </div>
         
         <!-- Profile Pictures Row -->
@@ -465,7 +465,7 @@
 const testimonials = {
     1: {
         name: "Dr. G Lakshminarayana",
-        title: "Director of Placements",
+        title: "Training & Placement Officer",
         university: "PRESIDENCY UNIVERSITY",
         text: "Students and TPOs find this app as robust as any other best social media apps",
         paragraphs: [
@@ -477,7 +477,7 @@ const testimonials = {
     2: {
         name: "Prof. Sarah Johnson",
         title: "Head of Computer Science",
-        university: "TECHNO INSTITUTE",
+        university: "PRESIDENCY UNIVERSITY",
         text: "The platform has revolutionized how we connect students with potential employers",
         paragraphs: [
             "Integration with our existing academic systems was seamless. The platform syncs with our student information system, making profile management effortless for both students and administrators.",
@@ -488,7 +488,7 @@ const testimonials = {
     3: {
         name: "Dr. Rajesh Kumar",
         title: "Training & Placement Officer",
-        university: "ENGINEERING COLLEGE",
+        university: "PRESIDENCY UNIVERSITY",
         text: "This platform has made our placement drives incredibly efficient and organized",
         paragraphs: [
             "The automated resume screening feature has been a game-changer. We can now match candidates to job requirements instantly, saving countless hours of manual review.",
@@ -499,7 +499,7 @@ const testimonials = {
     4: {
         name: "Prof. Emily Chen",
         title: "Career Services Director",
-        university: "BUSINESS SCHOOL",
+        university: "PRESIDENCY UNIVERSITY",
         text: "Students love the user-friendly interface and comprehensive job search features",
         paragraphs: [
             "Students absolutely love the user-friendly interface. The personalized job recommendations based on their profiles and career preferences have significantly increased application rates.",
@@ -510,7 +510,7 @@ const testimonials = {
     5: {
         name: "Dr. Michael Brown",
         title: "Dean of Student Affairs",
-        university: "UNIVERSITY OF EXCELLENCE",
+        university: "PRESIDENCY UNIVERSITY",
         text: "The best investment we've made for our students' career development",
         paragraphs: [
             "The comprehensive skill assessment and gap analysis tools have helped us identify areas where our students need additional support. We've been able to tailor our programs accordingly.",
