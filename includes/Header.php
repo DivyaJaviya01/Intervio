@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts - Montserrat (Clean, modern) -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Custom Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <style>
         .navbar {
             background-color: #ffffff !important;

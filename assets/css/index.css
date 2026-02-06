@@ -62,7 +62,23 @@
     animation-play-state: paused;
 }
 
-/* Responsive adjustments */
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .logo-track-container {
+        width: 95vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .placement-name {
+        font-size: 1.5rem;
+    }
+    
+    .stat-item {
+        padding: 4px;
+    }
+}
+
 @media (max-width: 768px) {
     .logo-track {
         width: calc(120px * 16);
@@ -82,30 +98,49 @@
         flex: 0 0 120px;
         margin: 0 10px;
     }
+    
+    .placement-name {
+        font-size: 1.3rem;
+    }
+    
+    .superset-overlay {
+        padding: 15px 15px 15px;
+    }
 }
 
-/* Placement Carousel Styling */
-.carousel-control-prev,
-.carousel-control-next {
-    width: 50px;
-    opacity: 0.7;
-}
+@media (max-width: 576px) {
+    .logo-track {
+        width: calc(100px * 16);
+    }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    opacity: 1;
-}
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
 
-.carousel-indicators button {
-    background-color: #647880;
-}
+        100% {
+            transform: translateX(calc(-100px * 8));
+        }
+    }
 
-.carousel-indicators button.active {
-    background-color: #D8E4EB;
-}
-
-.placement-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .logo-item {
+        flex: 0 0 100px;
+        margin: 0 8px;
+    }
+    
+    .placement-name {
+        font-size: 1.1rem;
+    }
+    
+    .stat-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    
+    .stat-value {
+        font-size: 1rem;
+    }
 }
 
 /* Superset Style Design */
@@ -281,13 +316,5 @@
 
     50% {
         transform: scale(1.05);
-    }
-}
-
-/* Responsive enhancements */
-@media (max-width: 768px) {
-    .logo-item {
-        flex: 0 0 120px;
-        margin: 0 10px;
     }
 }

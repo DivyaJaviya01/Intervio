@@ -1,0 +1,78 @@
+/* Mobile-First Responsive Design for Intervio */
+
+/* Mobile Styles (Default) */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Touch-friendly tap targets */
+.btn, .form-control, .form-select {
+    min-height: 44px;
+}
+
+/* Mobile navigation */
+.navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+}
+
+/* Mobile forms */
+.floating-label {
+    margin-bottom: 1rem;
+}
+
+.form-row {
+    margin-bottom: 1rem;
+}
+
+/* Mobile cards */
+.card {
+    margin-bottom: 1rem;
+}
+
+/* Mobile images */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Extra Large Desktop */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
