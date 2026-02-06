@@ -250,6 +250,171 @@
     </div>
 </section>
 
+<!-- Partner Companies Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold mb-3" style="color: #000000; font-size: 2.5rem;">Our Recruitment Partners</h2>
+            <p class="text-muted">Intervio has partnerships with leading companies for campus placements</p>
+        </div>
+        
+        <!-- Company Logos Grid -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="logo-slider">
+                    <div class="logo-track-container">
+    <div class="logo-track">
+                            <!-- First Row of Logos -->
+                            <div class="logo-item">
+                                <img src="assets/logos/Google-Logo.wine.svg" alt="Google" style="width: 150px; height: 75px; object-fit: contain;">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/logos/Microsoft-Logo.wine.svg" alt="Microsoft" style="width: 150px; height: 75px; object-fit: contain;">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/logos/Amazon_(company)-Logo.wine.svg" alt="Amazon" style="width: 150px; height: 75px; object-fit: contain;">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/logos/Meta_Platforms-Logo.wine.svg" alt="Meta" style="width: 150px; height: 75px; object-fit: contain;">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/logos/Tech_Mahindra-Logo.wine.svg" alt="Tech Mahindra" style="width: 150px; height: 75px; object-fit: contain;">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/logos/HCL_Technologies-Logo.wine.svg" alt="HCL Technologies" style="width: 150px; height: 75px; object-fit: contain;">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/logos/Infosys_logo.svg" alt="Infosys" style="width: 150px; height: 75px; object-fit: contain;">
+</div>
+                            <div class="logo-item">
+                                <img src="assets/logos/Wipro_Primary_Logo_Color_RGB.svg" alt="Wipro" style="width: 150px; height: 75px; object-fit: contain;">
+                            </div>
+                            <!-- Repeat for seamless loop -->
+                            <div class="logo-item">
+                                <img src="assets/logos/Google-Logo.wine.svg" alt="Google" style="width: 150px; height: 75px; object-fit: contain;">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/logos/Microsoft-Logo.wine.svg" alt="Microsoft" style="width: 150px; height: 75px; object-fit: contain;">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/logos/Amazon_(company)-Logo.wine.svg" alt="Amazon" style="width: 150px; height: 75px; object-fit: contain;">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/logos/Meta_Platforms-Logo.wine.svg" alt="Meta" style="width: 150px; height: 75px; object-fit: contain;">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/logos/Tech_Mahindra-Logo.wine.svg" alt="Tech Mahindra" style="width: 150px; height: 75px; object-fit: contain;">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/logos/HCL_Technologies-Logo.wine.svg" alt="HCL Technologies" style="width: 150px; height: 75px; object-fit: contain;">
+</div>
+                            <div class="logo-item">
+                                <img src="assets/logos/Wipro_Primary_Logo_Color_RGB.svg" alt="Wipro" style="width: 150px; height: 75px; object-fit: contain;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Partnership Stats -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <div class="text-center">
+                    <h4 class="mb-4 fw-bold">Trusted by Industry Leaders</h4>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="stat-box p-3 bg-white rounded shadow-sm">
+                                <h3 class="h4 mb-1 text-primary">200+</h3>
+                                <p class="small text-muted mb-0">Partner Companies</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="stat-box p-3 bg-white rounded shadow-sm">
+                                <h3 class="h4 mb-1 text-success">5000+</h3>
+                                <p class="small text-muted mb-0">Students Placed</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="stat-box p-3 bg-white rounded shadow-sm">
+                                <h3 class="h4 mb-1 text-warning">95%</h3>
+                                <p class="small text-muted mb-0">Success Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Logo Slider Animation - Simplified */
+.logo-slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background: #f8f9fa;
+    padding: 20px 0;
+}
+
+.logo-track-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    width: 2700px;
+    animation: scroll 15s linear infinite;
+}
+
+.logo-item {
+    flex: 0 0 150px;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1350px);
+    }
+}
+
+/* Pause animation on hover */
+.logo-slider:hover .logo-track {
+    animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo-track {
+        width: 2160px;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-1080px);
+        }
+    }
+
+    .logo-item {
+        flex: 0 0 120px;
+        margin: 0 10px;
+    }
+}
+</style>
+
 <!-- Stats Section -->
 <section class="py-5" style="background-color: #1e40af; color: white;">
     <div class="container">

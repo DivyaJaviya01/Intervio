@@ -254,7 +254,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <div class="sidebar-header">
-            <h3><i class="fas fa-graduation-cap"></i> Presidency University Admin</h3>
+            <h3><i class="fas fa-graduation-cap"></i> RK University Admin</h3>
         </div>
         <nav class="sidebar-menu">
             <a href="index.php" class="menu-item active">

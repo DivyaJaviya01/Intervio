@@ -42,9 +42,9 @@ $year = date('Y');
                     <h6 class="mb-3" style="color: #FFFFFF; font-weight: 600;">Quick Links</h6>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="index.php" class="text-decoration-none" style="color: #FFFFFF; transition: color 0.3s;">Home</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFFFFF; transition: color 0.3s;">Drives</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFFFFF; transition: color 0.3s;">Preparation</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFFFFF; transition: color 0.3s;">Aptitude</a></li>
+                        <li class="mb-2"><a href="pages/drives.php" class="text-decoration-none" style="color: #FFFFFF; transition: color 0.3s;">Drives</a></li>
+                        <li class="mb-2"><a href="pages/preparation.php" class="text-decoration-none" style="color: #FFFFFF; transition: color 0.3s;">Preparation</a></li>
+                        <li class="mb-2"><a href="pages/aptitude.php" class="text-decoration-none" style="color: #FFFFFF; transition: color 0.3s;">Aptitude</a></li>
                     </ul>
                 </div>
                 

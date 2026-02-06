@@ -96,7 +96,7 @@
             <p class="text-muted">Our students' remarkable achievements</p>
         </div>
         
-        <div id="placementsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div id="placementsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#placementsCarousel" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#placementsCarousel" data-bs-slide-to="1"></button>
@@ -201,6 +201,24 @@
                         </div>
                         <div class="col-lg-6 placement-content-side">
                             <div class="placement-content">
+                                <div class="placement-header">
+                                    <h3 class="placement-name">Amit Kumar</h3>
+                                    <p class="placement-role">Software Engineer</p>
+                                </div>
+                                
+                                <div class="placement-company">
+                                    <div class="company-logo">
+                                        <img src="assets/logos/Amazon_(company)-Logo.wine.svg" alt="Amazon" style="width: 60px; height: 60px; object-fit: contain;">
+                                    </div>
+                                    <div class="company-details">
+                                        <h4 class="company-name">Amazon</h4>
+                                        <p class="company-location">Mumbai</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="placement-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Package</span>
                                         <span class="stat-value">₹38 LPA</span>
                                     </div>
                                     <div class="stat-item">
@@ -234,11 +252,11 @@
     </div>
 </section>
 
-<!-- Why Presidency University Loves Intervio Section -->
+<!-- Why RK University Loves Intervio Section -->
 <section class="py-5" style="background-color: #ffffff;">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="fw-bold" style="color: #000000; font-size: 2.5rem;">Why Presidency University loves Intervio</h2>
+            <h2 class="fw-bold" style="color: #000000; font-size: 2.5rem;">Why RK University loves Intervio</h2>
         </div>
         
         <!-- Profile Pictures Row -->
@@ -309,14 +327,14 @@
                                     <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="120" height="40" rx="4" fill="#000000"/>
                                         <path d="M15 12L18 20L21 12M25 12L28 20L31 12M35 12L38 20L41 12M45 12L48 20L51 12M55 12L58 20L61 12M65 12L68 20L71 12M75 12L78 20L81 12M85 12L88 20L91 12M95 12L98 20L101 12M105 12L108 20L111 12" stroke="#FFC107" stroke-width="2"/>
-                                        <text x="60" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">PRESIDENCY</text>
+                                        <text x="60" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">RK</text>
                                     </svg>
                                 </div>
                                 
                                 <!-- Person Name and Title -->
                                 <div class="person-details">
                                     <h6 class="fw-bold mb-0 person-name" style="color: #000000; font-size: 0.9rem;">Dr. G Lakshminarayana</h6>
-                                    <p class="mb-0 text-muted person-title" style="font-size: 0.8rem;">Director of Placements</p>
+                                    <p class="mb-0 text-muted person-title" style="font-size: 0.8rem;">Training & Placement Officer</p>
                                 </div>
                             </div>
                         </div>
@@ -346,10 +364,11 @@
 /* Clean Carousel Styles */
 .placement-card {
     background: white;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     min-height: 500px;
+
 }
 
 .placement-image-side {
@@ -433,6 +452,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-bottom: 30px;
+    position: relative;
+
 }
 
 .stat-item {
@@ -442,13 +463,13 @@
     padding: 15px;
     background: #f8f9fa;
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    position: relative;
+    z-index: 1;
+    
 }
 
-.stat-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+
 
 .stat-label {
     font-size: 0.85rem;
@@ -557,11 +578,23 @@
 </style>
 
 <script>
+// Initialize the carousel
+var myCarousel = document.getElementById('placementsCarousel');
+if (myCarousel) {
+    var bsCarousel = new bootstrap.Carousel(myCarousel, {
+        interval: 3000,
+        wrap: true
+    });
+}
+</script>
+
+<script>
+// Testimonial functionality
 const testimonials = {
     1: {
         name: "Dr. G Lakshminarayana",
         title: "Training & Placement Officer",
-        university: "PRESIDENCY UNIVERSITY",
+        university: "RK UNIVERSITY",
         text: "Students and TPOs find this app as robust as any other best social media apps",
         paragraphs: [
             "The platform has transformed our placement process completely. What used to take weeks of manual coordination now happens seamlessly through the app. Our students are more engaged than ever, and the real-time notifications keep everyone informed about opportunities.",
@@ -572,7 +605,7 @@ const testimonials = {
     2: {
         name: "Prof. Sarah Johnson",
         title: "Head of Computer Science",
-        university: "PRESIDENCY UNIVERSITY",
+        university: "RK UNIVERSITY",
         text: "The platform has revolutionized how we connect students with potential employers",
         paragraphs: [
             "Integration with our existing academic systems was seamless. The platform syncs with our student information system, making profile management effortless for both students and administrators.",
@@ -583,7 +616,7 @@ const testimonials = {
     3: {
         name: "Dr. Rajesh Kumar",
         title: "Training & Placement Officer",
-        university: "PRESIDENCY UNIVERSITY",
+        university: "RK UNIVERSITY",
         text: "This platform has made our placement drives incredibly efficient and organized",
         paragraphs: [
             "The automated resume screening feature has been a game-changer. We can now match candidates to job requirements instantly, saving countless hours of manual review.",
@@ -594,7 +627,7 @@ const testimonials = {
     4: {
         name: "Prof. Emily Chen",
         title: "Career Services Director",
-        university: "PRESIDENCY UNIVERSITY",
+        university: "RK UNIVERSITY",
         text: "Students love the user-friendly interface and comprehensive job search features",
         paragraphs: [
             "Students absolutely love the user-friendly interface. The personalized job recommendations based on their profiles and career preferences have significantly increased application rates.",
@@ -605,7 +638,7 @@ const testimonials = {
     5: {
         name: "Dr. Michael Brown",
         title: "Dean of Student Affairs",
-        university: "PRESIDENCY UNIVERSITY",
+        university: "RK UNIVERSITY",
         text: "The best investment we've made for our students' career development",
         paragraphs: [
             "The comprehensive skill assessment and gap analysis tools have helped us identify areas where our students need additional support. We've been able to tailor our programs accordingly.",
@@ -618,11 +651,11 @@ const testimonials = {
 // Function to generate university logo SVG
 function getUniversityLogo(university) {
     const logos = {
-        'PRESIDENCY UNIVERSITY': `
+        'RK UNIVERSITY': `
             <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="120" height="40" rx="4" fill="#000000"/>
                 <path d="M15 12L18 20L21 12M25 12L28 20L31 12M35 12L38 20L41 12M45 12L48 20L51 12M55 12L58 20L61 12M65 12L68 20L71 12M75 12L78 20L81 12M85 12L88 20L91 12M95 12L98 20L101 12M105 12L108 20L111 12" stroke="#FFC107" stroke-width="2"/>
-                <text x="60" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">PRESIDENCY</text>
+                <text x="60" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">RK</text>
             </svg>
         `,
         'TECHNO INSTITUTE': `
@@ -657,16 +690,24 @@ function getUniversityLogo(university) {
         `
     };
     
-    return logos[university] || logos['PRESIDENCY UNIVERSITY'];
+    return logos[university] || logos['RK UNIVERSITY'];
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Testimonial script loaded');
     const profilePics = document.querySelectorAll('.profile-pic');
+    console.log('Found profile pictures:', profilePics.length);
     
-    profilePics.forEach(pic => {
+    profilePics.forEach((pic, index) => {
         pic.addEventListener('click', function() {
             const personId = this.getAttribute('data-person');
+            console.log('Clicked person:', personId);
             const testimonial = testimonials[personId];
+            
+            if (!testimonial) {
+                console.error('Testimonial not found for person:', personId);
+                return;
+            }
             
             // Update active state
             profilePics.forEach(p => {
@@ -679,6 +720,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // Update content with fade effect
             const textElement = document.querySelector('.testimonial-text');
             const paragraphsElement = document.querySelector('.testimonial-paragraphs');
+            
+            if (!textElement || !paragraphsElement) {
+                console.error('Required elements not found');
+                return;
+            }
             
             // Fade out
             textElement.style.opacity = '0';

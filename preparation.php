@@ -538,6 +538,215 @@
     </div>
 </section>
 
+<!-- Interview Preparation Hints & Hot Topics Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Interview Preparation Hints & Hot Topics</h2>
+        <p class="text-center text-muted mb-5">Stay updated with the latest interview trends and essential preparation tips</p>
+        
+        <div class="row">
+            <!-- Hot Topics Column -->
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="fas fa-fire me-2"></i>Hot Topics for 2024</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="topic-list">
+                            <div class="topic-item mb-3 p-3 bg-light rounded">
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-danger me-3">Trending</span>
+                                    <h6 class="mb-0">Artificial Intelligence & Machine Learning</h6>
+                                </div>
+                                <p class="small text-muted mb-2">AI/ML concepts, algorithms, and practical applications</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted">Asked in: 85% of tech interviews</span>
+                                    <button class="btn btn-sm btn-outline-primary">Study Guide</button>
+                                </div>
+                            </div>
+                            
+                            <div class="topic-item mb-3 p-3 bg-light rounded">
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-warning me-3">Popular</span>
+                                    <h6 class="mb-0">Cloud Computing & DevOps</h6>
+                                </div>
+                                <p class="small text-muted mb-2">AWS, Azure, Docker, Kubernetes, CI/CD pipelines</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted">Asked in: 70% of interviews</span>
+                                    <button class="btn btn-sm btn-outline-primary">Study Guide</button>
+                                </div>
+                            </div>
+                            
+                            <div class="topic-item mb-3 p-3 bg-light rounded">
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-success me-3">Essential</span>
+                                    <h6 class="mb-0">Data Structures & Algorithms</h6>
+                                </div>
+                                <p class="small text-muted mb-2">Core DSA, problem-solving patterns, optimization</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted">Asked in: 95% of interviews</span>
+                                    <button class="btn btn-sm btn-outline-primary">Study Guide</button>
+                                </div>
+                            </div>
+                            
+                            <div class="topic-item mb-3 p-3 bg-light rounded">
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-info me-3">Growing</span>
+                                    <h6 class="mb-0">Cybersecurity & Network Security</h6>
+                                </div>
+                                <p class="small text-muted mb-2">Security protocols, encryption, threat detection</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted">Asked in: 60% of interviews</span>
+                                    <button class="btn btn-sm btn-outline-primary">Study Guide</button>
+                                </div>
+                            </div>
+                            
+                            <div class="topic-item p-3 bg-light rounded">
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-secondary me-3">Important</span>
+                                    <h6 class="mb-0">System Design & Architecture</h6>
+                                </div>
+                                <p class="small text-muted mb-2">Scalable systems, microservices, database design</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted">Asked in: 75% of senior roles</span>
+                                    <button class="btn btn-sm btn-outline-primary">Study Guide</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Preparation Hints Column -->
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow h-100">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0"><i class="fas fa-lightbulb me-2"></i>Expert Preparation Hints</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="hints-list">
+                            <div class="hint-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="hint-icon bg-primary text-white rounded-circle p-2 me-3">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-2">Time Management</h6>
+                                        <p class="small text-muted">Spend 2-3 minutes thinking before answering. It's better to take time than to give a rushed answer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="hint-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="hint-icon bg-info text-white rounded-circle p-2 me-3">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-2">Communication Style</h6>
+                                        <p class="small text-muted">Think out loud! Explain your thought process while solving problems. Interviewers want to see how you think.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="hint-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="hint-icon bg-warning text-white rounded-circle p-2 me-3">
+                                        <i class="fas fa-question-circle"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-2">Ask Clarifying Questions</h6>
+                                        <p class="small text-muted">Always ask questions to clarify requirements. It shows attention to detail and prevents misunderstandings.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="hint-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="hint-icon bg-success text-white rounded-circle p-2 me-3">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-2">Code Organization</h6>
+                                        <p class="small text-muted">Write clean, readable code with proper variable names. Comments can help explain complex logic.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="hint-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="hint-icon bg-danger text-white rounded-circle p-2 me-3">
+                                        <i class="fas fa-bug"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-2">Testing & Edge Cases</h6>
+                                        <p class="small text-muted">Always discuss testing your solution. Consider edge cases, null inputs, and error handling.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="hint-item">
+                                <div class="d-flex align-items-start">
+                                    <div class="hint-icon bg-secondary text-white rounded-circle p-2 me-3">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-2">Optimization Discussion</h6>
+                                        <p class="small text-muted">Talk about time and space complexity. Mention potential optimizations and trade-offs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quick Tips Section -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card border-0 shadow">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0"><i class="fas fa-star me-2"></i>Quick Tips for Success</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <div class="quick-tip p-3 bg-light rounded text-center">
+                                    <i class="fas fa-laptop-code fa-2x text-primary mb-2"></i>
+                                    <h6 class="mb-2">Practice Daily</h6>
+                                    <p class="small text-muted">Solve at least one coding problem daily to maintain sharpness</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="quick-tip p-3 bg-light rounded text-center">
+                                    <i class="fas fa-users fa-2x text-success mb-2"></i>
+                                    <h6 class="mb-2">Mock Interviews</h6>
+                                    <p class="small text-muted">Practice with peers or use AI mock interview platforms</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="quick-tip p-3 bg-light rounded text-center">
+                                    <i class="fas fa-book fa-2x text-warning mb-2"></i>
+                                    <h6 class="mb-2">Company Research</h6>
+                                    <p class="small text-muted">Research the company's tech stack and recent projects</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="quick-tip p-3 bg-light rounded text-center">
+                                    <i class="fas fa-heart fa-2x text-danger mb-2"></i>
+                                    <h6 class="mb-2">Stay Calm</h6>
+                                    <p class="small text-muted">Deep breathing exercises help manage interview anxiety</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Stats Section -->
 <section class="py-5" style="background-color: #1e40af; color: white;">
     <div class="container">

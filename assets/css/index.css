@@ -197,7 +197,7 @@
 .stat-item:hover {
     background: #f1f5f9;
     border-color: #cbd5e1;
-    transform: translateY(-2px);
+    transform: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
@@ -221,7 +221,7 @@
 }
 
 .placement-card:hover {
-    transform: translateY(-8px);
+    transform: none;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
 }
 

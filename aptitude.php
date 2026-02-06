@@ -6,10 +6,10 @@
         <h1 class="display-3 fw-bold mb-4">Aptitude Test Preparation</h1>
         <p class="lead mb-5">Master quantitative aptitude, logical reasoning, and verbal skills for placement success</p>
         <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <div class="input-group">
-                    <input type="text" class="form-control form-control-lg" placeholder="Search topics, practice tests, or skills..." style="border: 2px solid #000000; border-radius: 8px 0 0 8px;">
-                    <button class="btn btn-lg" type="button" style="background-color: #000000; color: #FFFFFF; border: 2px solid #000000; border-radius: 0 8px 8px 0;">Search</button>
+                    <input type="text" class="form-control form-control-lg" placeholder="Search topics, practice tests, or skills...">
+                    <button class="btn btn-warning btn-lg" type="button">Search Resources</button>
                 </div>
             </div>
         </div>
