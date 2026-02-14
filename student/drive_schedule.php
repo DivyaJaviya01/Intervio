@@ -1,11 +1,19 @@
 <?php
-session_start();
-if (!isset($_SESSION['user_logged_in']) || !$_SESSION['user_logged_in']) {
-    header('Location: ../auth/register.php');
-    exit();
-}
+// session_start();
+// if (!isset($_SESSION['user_logged_in']) || !$_SESSION['user_logged_in']) {
+//     header('Location: ../auth/register.php');
+//     exit();
+// }
 
-$user_data = $_SESSION['user_data'] ?? [];
+// $user_data = $_SESSION['user_data'] ?? [];
+// Mock user data for demo purposes
+$user_data = [
+    'fullName' => 'Demo Student',
+    'email' => 'demo@student.com',
+    'enrollmentNumber' => 'DEMO2024001',
+    'course' => 'Computer Science',
+    'semester' => '6'
+];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,6 +39,71 @@ $user_data = $_SESSION['user_data'] ?? [];
                         <h4><i class="fas fa-calendar-check me-2"></i>Drive Schedule</h4>
                     </div>
                     <div class="card-body">
+                        <!-- Announcements Section -->
+                        <div class="alert alert-light border-info alert-dismissible fade show mb-4" role="alert" id="studentAnnouncements">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h6 class="alert-heading mb-0 text-info"><i class="fas fa-bullhorn me-2"></i>Latest Announcements</h6>
+                                <button class="btn btn-sm btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#studentAnnouncementContent" aria-expanded="true">
+                                    <i class="fas fa-chevron-up" id="studentAnnouncementToggle"></i>
+                                </button>
+                            </div>
+                            <hr class="border-info">
+                            <div class="collapse show" id="studentAnnouncementContent">
+                                <!-- Announcement 1 -->
+                                <div class="mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <strong class="text-success">🚀 Microsoft Drive - Last Date to Apply Extended</strong>
+                                            <div class="text-muted small mb-1">
+                                                <i class="fas fa-calendar me-1"></i> Dec 10, 2024
+                                                <span class="ms-3"><i class="fas fa-clock me-1"></i> 2:30 PM</span>
+                                            </div>
+                                            <div class="small">
+                                                Good news! Microsoft has extended the last date to apply for their Software Developer position. Students can now apply until December 20, 2024.
+                                            </div>
+                                        </div>
+                                        <span class="badge bg-success ms-2">Published</span>
+                                    </div>
+                                </div>
+
+                                <!-- Announcement 2 -->
+                                <div class="mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <strong class="text-warning">📅 Placement Week Schedule Released</strong>
+                                            <div class="text-muted small mb-1">
+                                                <i class="fas fa-calendar me-1"></i> Dec 8, 2024
+                                                <span class="ms-3"><i class="fas fa-clock me-1"></i> 10:00 AM</span>
+                                            </div>
+                                            <div class="small">
+                                                The complete schedule for Placement Week 2024 has been released. Check the detailed timetable for company presentations and interview slots.
+                                            </div>
+                                        </div>
+                                        <span class="badge bg-warning text-dark ms-2">Important</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const studentAnnouncementToggle = document.getElementById('studentAnnouncementToggle');
+                            const studentAnnouncementContent = document.getElementById('studentAnnouncementContent');
+                            
+                            if (studentAnnouncementToggle && studentAnnouncementContent) {
+                                studentAnnouncementToggle.addEventListener('click', function() {
+                                    if (studentAnnouncementContent.classList.contains('show')) {
+                                        studentAnnouncementToggle.classList.remove('fa-chevron-up');
+                                        studentAnnouncementToggle.classList.add('fa-chevron-down');
+                                    } else {
+                                        studentAnnouncementToggle.classList.remove('fa-chevron-down');
+                                        studentAnnouncementToggle.classList.add('fa-chevron-up');
+                                    }
+                                });
+                            }
+                        });
+                        </script>
+
                         <div class="row mb-4">
                             <div class="col-md-6">
                                 <h5>Upcoming Drives</h5>

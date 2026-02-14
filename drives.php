@@ -16,6 +16,78 @@
     </div>
 </section>
 
+<!-- Announcements Section -->
+<section class="py-4 bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-light border-info alert-dismissible fade show" role="alert" id="mainAnnouncements">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="alert-heading mb-0 text-info"><i class="fas fa-bullhorn me-2"></i>📢 Latest Announcements</h5>
+                        <button class="btn btn-sm btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#announcementContent" aria-expanded="true">
+                            <i class="fas fa-chevron-up" id="announcementToggle"></i>
+                        </button>
+                    </div>
+                    <hr class="border-info">
+                    <div class="collapse show" id="announcementContent">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-grow-1">
+                                        <strong class="text-success">🚀 Microsoft Drive - Last Date to Apply Extended</strong>
+                                        <div class="text-muted small mb-1">
+                                            <i class="fas fa-calendar me-1"></i> Dec 10, 2024
+                                            <span class="ms-3"><i class="fas fa-clock me-1"></i> 2:30 PM</span>
+                                        </div>
+                                        <div class="small">
+                                            Good news! Microsoft has extended the last date to apply for their Software Developer position. Students can now apply until December 20, 2024.
+                                        </div>
+                                    </div>
+                                    <span class="badge bg-success ms-2">Published</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-grow-1">
+                                        <strong class="text-warning">📅 Placement Week Schedule Released</strong>
+                                        <div class="text-muted small mb-1">
+                                            <i class="fas fa-calendar me-1"></i> Dec 8, 2024
+                                            <span class="ms-3"><i class="fas fa-clock me-1"></i> 10:00 AM</span>
+                                        </div>
+                                        <div class="small">
+                                            The complete schedule for Placement Week 2024 has been released. Check the detailed timetable for company presentations and interview slots.
+                                        </div>
+                                    </div>
+                                    <span class="badge bg-warning text-dark ms-2">Important</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const announcementToggle = document.getElementById('announcementToggle');
+    const announcementContent = document.getElementById('announcementContent');
+    
+    if (announcementToggle && announcementContent) {
+        announcementToggle.addEventListener('click', function() {
+            if (announcementContent.classList.contains('show')) {
+                announcementToggle.classList.remove('fa-chevron-up');
+                announcementToggle.classList.add('fa-chevron-down');
+            } else {
+                announcementToggle.classList.remove('fa-chevron-down');
+                announcementToggle.classList.add('fa-chevron-up');
+            }
+        });
+    }
+});
+</script>
+
 <!-- Filter Section -->
 <section class="py-5 bg-light">
     <div class="container">
@@ -83,166 +155,106 @@
         <h2 class="text-center mb-5 fw-bold">Featured Placement Drives</h2>
         <div class="row">
             <div class="col-md-6 mb-4">
-                <div class="card border-0 shadow-lg h-100">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="company-logo bg-primary text-white rounded-circle p-3 me-3">
-                                <i class="fas fa-code fa-2x"></i>
-                            </div>
-                            <div>
-                                <h4 class="mb-1">TechCorp Solutions</h4>
-                                <p class="text-muted mb-0">Software Development</p>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <small class="text-muted">Package</small>
-                                <p class="fw-bold mb-0">₹12-18 LPA</p>
-                            </div>
-                            <div class="col-6">
-                                <small class="text-muted">Location</small>
-                                <p class="fw-bold mb-0">Bangalore, Pune</p>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <small class="text-muted">Date</small>
-                                <p class="fw-bold mb-0">15th March 2025</p>
-                            </div>
-                            <div class="col-6">
-                                <small class="text-muted">Deadline</small>
-                                <p class="fw-bold text-danger mb-0">10th March 2025</p>
+                <div class="drive-card">
+                    <div class="drive-header">
+                        <div>
+                            <div class="drive-title">Software Developer Position</div>
+                            <div class="drive-company">Microsoft India</div>
+                            <div class="drive-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>15th March 2025</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>10:00 AM</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Bangalore, Pune</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-tag"></i>
+                                    <span>Full-time</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <span class="badge bg-success me-2">Full Time</span>
-                            <span class="badge bg-info me-2">On Campus</span>
-                            <span class="badge bg-warning">B.Tech/MCA</span>
+                        <div>
+                            <img src="https://picsum.photos/seed/microsoft/100/100.jpg" alt="Microsoft" class="company-logo">
                         </div>
-                        <button class="btn btn-primary w-100">Apply Now</button>
+                    </div>
+                    <div class="drive-description">
+                        Microsoft is looking for talented software developers to join their team. This drive includes multiple rounds of technical interviews and assessments.
+                    </div>
+                    <div class="drive-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">45</div>
+                            <div class="stat-label">Applications</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Shortlisted</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">₹12-18 LPA</div>
+                            <div class="stat-label">Package</div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="badge badge-success">Upcoming</span>
+                        <button class="btn btn-primary">Apply Now</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 mb-4">
-                <div class="card border-0 shadow-lg h-100">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="company-logo bg-success text-white rounded-circle p-3 me-3">
-                                <i class="fas fa-chart-line fa-2x"></i>
-                            </div>
-                            <div>
-                                <h4 class="mb-1">DataTech Analytics</h4>
-                                <p class="text-muted mb-0">Data Science & Analytics</p>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <small class="text-muted">Package</small>
-                                <p class="fw-bold mb-0">₹15-22 LPA</p>
-                            </div>
-                            <div class="col-6">
-                                <small class="text-muted">Location</small>
-                                <p class="fw-bold mb-0">Mumbai, Hyderabad</p>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <small class="text-muted">Date</small>
-                                <p class="fw-bold mb-0">20th March 2025</p>
-                            </div>
-                            <div class="col-6">
-                                <small class="text-muted">Deadline</small>
-                                <p class="fw-bold text-danger mb-0">15th March 2025</p>
+                <div class="drive-card">
+                    <div class="drive-header">
+                        <div>
+                            <div class="drive-title">Data Analyst Internship</div>
+                            <div class="drive-company">Amazon Development Center</div>
+                            <div class="drive-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>30th March 2025</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>2:00 PM</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Chennai, Bangalore</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-tag"></i>
+                                    <span>Internship</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <span class="badge bg-success me-2">Full Time</span>
-                            <span class="badge bg-info me-2">On Campus</span>
-                            <span class="badge bg-warning">B.Tech/M.Sc</span>
+                        <div>
+                            <img src="https://picsum.photos/seed/amazon/100/100.jpg" alt="Amazon" class="company-logo">
                         </div>
-                        <button class="btn btn-primary w-100">Apply Now</button>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card border-0 shadow-lg h-100">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="company-logo bg-warning text-white rounded-circle p-3 me-3">
-                                <i class="fas fa-mobile-alt fa-2x"></i>
-                            </div>
-                            <div>
-                                <h4 class="mb-1">AppDev Studios</h4>
-                                <p class="text-muted mb-0">Mobile App Development</p>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <small class="text-muted">Package</small>
-                                <p class="fw-bold mb-0">₹10-15 LPA</p>
-                            </div>
-                            <div class="col-6">
-                                <small class="text-muted">Location</small>
-                                <p class="fw-bold mb-0">Delhi, Gurgaon</p>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <small class="text-muted">Date</small>
-                                <p class="fw-bold mb-0">25th March 2025</p>
-                            </div>
-                            <div class="col-6">
-                                <small class="text-muted">Deadline</small>
-                                <p class="fw-bold text-danger mb-0">20th March 2025</p>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <span class="badge bg-success me-2">Full Time</span>
-                            <span class="badge bg-info me-2">On Campus</span>
-                            <span class="badge bg-warning">B.Tech/BCA</span>
-                        </div>
-                        <button class="btn btn-primary w-100">Apply Now</button>
+                    <div class="drive-description">
+                        Amazon is seeking motivated data analysts for their internship program. Work on real-world data challenges and learn from industry experts.
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card border-0 shadow-lg h-100">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="company-logo bg-danger text-white rounded-circle p-3 me-3">
-                                <i class="fas fa-shield-alt fa-2x"></i>
-                            </div>
-                            <div>
-                                <h4 class="mb-1">CyberSecure Systems</h4>
-                                <p class="text-muted mb-0">Cybersecurity & IT</p>
-                            </div>
+                    <div class="drive-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">89</div>
+                            <div class="stat-label">Applications</div>
                         </div>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <small class="text-muted">Package</small>
-                                <p class="fw-bold mb-0">₹18-25 LPA</p>
-                            </div>
-                            <div class="col-6">
-                                <small class="text-muted">Location</small>
-                                <p class="fw-bold mb-0">Chennai, Bangalore</p>
-                            </div>
+                        <div class="stat-item">
+                            <div class="stat-value">25</div>
+                            <div class="stat-label">Shortlisted</div>
                         </div>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <small class="text-muted">Date</small>
-                                <p class="fw-bold mb-0">30th March 2025</p>
-                            </div>
-                            <div class="col-6">
-                                <small class="text-muted">Deadline</small>
-                                <p class="fw-bold text-danger mb-0">25th March 2025</p>
-                            </div>
+                        <div class="stat-item">
+                            <div class="stat-value">₹8-12 LPA</div>
+                            <div class="stat-label">Stipend</div>
                         </div>
-                        <div class="mb-3">
-                            <span class="badge bg-success me-2">Full Time</span>
-                            <span class="badge bg-info me-2">On Campus</span>
-                            <span class="badge bg-warning">B.Tech/M.Tech</span>
-                        </div>
-                        <button class="btn btn-primary w-100">Apply Now</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="badge badge-success">Upcoming</span>
+                        <button class="btn btn-primary">Apply Now</button>
                     </div>
                 </div>
             </div>
@@ -411,6 +423,132 @@
     .logo-item {
         flex: 0 0 120px;
         margin: 0 10px;
+    }
+}
+
+/* Admin Drive Card Styles - Exact Match */
+.drive-card {
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background: white;
+    transition: box-shadow 0.3s ease;
+}
+
+.drive-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.drive-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.drive-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.drive-company {
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.drive-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.meta-item i {
+    color: #4f46e5;
+}
+
+.drive-description {
+    color: #4b5563;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.drive-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.badge-success {
+    background-color: #10b981;
+    color: white;
+}
+
+.badge-warning {
+    background-color: #f59e0b;
+    color: white;
+}
+
+.badge-danger {
+    background-color: #ef4444;
+    color: white;
+}
+
+.badge-info {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .drive-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .drive-stats {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 </style>

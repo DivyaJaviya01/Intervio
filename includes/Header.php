@@ -137,7 +137,7 @@
                 
                 <!-- Right: Action Buttons -->
                 <div class="d-flex ">
-                    <a href="auth/login.php" class="btn btn-login me-2">Login</a>
+                    <a href="student/profile.php" class="btn btn-login me-2">Login</a>
                     <a href="auth/register.php" class="btn btn-signup">Sign Up</a>
                 </div>
             </div>

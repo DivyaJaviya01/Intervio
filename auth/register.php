@@ -21,6 +21,7 @@ require_once 'validation.php';
 
 
     <!-- Bootstrap 5 -->
+<<<<<<< Updated upstream
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -38,16 +39,42 @@ require_once 'validation.php';
 
 </head>
 
+=======
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head> 
+>>>>>>> Stashed changes
 <body>
 
 
 
 <div class="main-container">
 
+<<<<<<< Updated upstream
     <!-- Page Header -->
+=======
+<!-- ================= PERSONAL INFORMATION ================= -->
+<h5>Personal Information</h5>
+<div class="section-progress">
+    <div class="progress-bar" id="personalProgress" validation="required "></div>
+</div>
+<div class="row g-3">
+    <div class="col-md-6 floating-label">
+        <input class="form-control" id="fullName" placeholder=" " name="fullName" data-validation="required nameOnly min" data-min="2">
+        <label for="fullName">Full Name</label>
+        <div id="fullName_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-6 floating-label">
+        <input type="date" class="form-control" id="dob" name="dob" data-validation="required">
+        <label for="dob">Date of Birth</label>
+        <div id="dob_error" class="small text-danger" style="display:none;"></div>
+    </div>
+>>>>>>> Stashed changes
 
     <div class="page-header">
 
+<<<<<<< Updated upstream
         <div class="d-flex justify-content-between align-items-center">
 
             <div>
@@ -1147,6 +1174,375 @@ require_once 'validation.php';
 
 
 
+=======
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="nationality" placeholder=" " name="nationality" data-validation="required min nameOnly" data-min="2">
+        <label for="nationality">Nationality</label>
+        <div id="nationality_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label">Category</label><br>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="cat-general" name="category" value="general">
+            <label class="form-check-label" for="cat-general">General</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="cat-obc" name="category" value="obc">
+            <label class="form-check-label" for="cat-obc">OBC</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="cat-sc" name="category" value="sc">
+            <label class="form-check-label" for="cat-sc">SC</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="cat-st" name="category" value="st">
+            <label class="form-check-label" for="cat-st">ST</label>
+        </div>
+    </div>
+
+    <div class="col-md-6 floating-label">
+        <input class="form-control" id="email" placeholder=" " name="email" data-validation="required email">
+        <label for="email">Email Address</label>
+        <div id="email_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-6">
+        <div class="input-group">
+            <span class="input-group-text">+91</span>
+            <input class="form-control" id="mobile" placeholder=" " name="mobile" data-validation="required number min" data-min="10" data-max="10">
+            <label class="input-group-text" for="mobile">Mobile Number</label>
+        </div>
+        <div id="mobile_error" class="small text-danger" style="display:none;"></div>
+    </div>
+
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="city" placeholder=" " name="city">
+        <label for="city">City</label>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="state" placeholder=" " name="state">
+        <label for="state">State</label>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="country" placeholder=" " name="country">
+        <label for="country">Country</label>
+    </div>
+    <div class="col-md-6 floating-label">
+        <textarea class="form-control" id="permanentAddress" placeholder=" " name="permanentAddress"></textarea>
+        <label for="permanentAddress">Permanent Address</label>
+    </div>
+    <div class="col-md-6 floating-label">
+        <textarea class="form-control" id="currentAddress" placeholder=" " name="currentAddress"></textarea>
+        <label for="currentAddress">Current Address</label>
+    </div>
+</div>
+<hr>
+<!-- ================= ACADEMIC INFORMATION ================= -->
+<h5>Academic Information</h5>
+<div class="section-progress">
+    <div class="progress-bar" id="academicProgress"></div>
+</div>
+<div class="row g-3">
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="enrollmentNumber" placeholder=" " name="enrollmentNumber" data-validation="required min" data-min="5">
+        <label for="enrollmentNumber">Enrollment Number</label>
+        <div id="enrollmentNumber_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="university" placeholder=" " name="university" data-validation="required min nameOnly" data-min="3">
+        <label for="university">College / University</label>
+        <div id="university_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="course" placeholder=" " name="course" data-validation="required min nameOnly" data-min="2">
+        <label for="course">Course / Branch</label>
+        <div id="course_error" class="small text-danger" style="display:none;"></div>
+    </div>
+
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="admissionYear" placeholder=" " name="admissionYear" data-validation="required number min" data-min="4" data-max="4">
+        <label for="admissionYear">Admission Year</label>
+        <div id="admissionYear_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="semester" placeholder=" " name="semester" data-validation="required number">
+        <label for="semester">Current Semester</label>
+        <div id="semester_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="cgpa" placeholder=" " name="cgpa">
+        <label for="cgpa">CGPA / Percentage</label>
+    </div>
+
+    <div class="col-md-4 floating-label">
+        <select class="form-select" id="backlogs" name="backlogs" data-validation="select">
+            <option value="" disabled selected>Backlogs</option>
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+        </select>
+        <label for="backlogs">Backlogs</label>
+        <div id="backlogs_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="backlogCount" placeholder=" " name="backlogCount" type="number">
+        <label for="backlogCount">Backlog Count</label>
+    </div>
+</div>
+<hr>
+<!-- ================= SKILLS ================= -->
+<h5>Skills</h5>
+<div class="section-progress">
+    <div class="progress-bar" id="skillsProgress"></div>
+</div>
+<div class="row g-3">
+    <div class="col-md-6 floating-label">
+        <input class="form-control" id="programmingLanguages" placeholder=" " name="programmingLanguages">
+        <label for="programmingLanguages">Programming Languages</label>
+    </div>
+    <div class="col-md-6 floating-label">
+        <input class="form-control" id="technologies" placeholder=" " name="technologies">
+        <label for="technologies">Tools & Technologies</label>
+    </div>
+    <div class="col-md-6 floating-label">
+        <input class="form-control" id="softSkills" placeholder=" " name="softSkills">
+        <label for="softSkills">Soft Skills</label>
+    </div>
+    <div class="col-md-6 floating-label">
+        <select class="form-select" id="proficiencyLevel" name="proficiencyLevel" data-validation="select">
+            <option value="" disabled selected>Skill Proficiency Level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+        <label for="proficiencyLevel">Skill Proficiency Level</label>
+        <div id="proficiencyLevel_error" class="small text-danger" style="display:none;"></div>
+    </div>
+</div>
+<hr>
+<!-- ================= EXPERIENCE DETAILS ================= -->
+<h5>Experience Details</h5>
+<div class="section-progress">
+    <div class="progress-bar" id="experienceProgress"></div>
+</div>
+<div class="row g-3">
+    <div class="col-md-4 floating-label">
+        <select class="form-select" id="internshipExperience" name="internshipExperience" data-validation="select">
+            <option value="" disabled selected>Internship Experience</option>
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+        </select>
+        <label for="internshipExperience">Internship Experience</label>
+        <div id="internshipExperience_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="internshipCompany" placeholder=" " name="internshipCompany">
+        <label for="internshipCompany">Internship Company</label>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="roleDuration" placeholder=" " name="roleDuration">
+        <label for="roleDuration">Role / Duration</label>
+    </div>
+
+    <div class="col-md-6 floating-label">
+        <input class="form-control" id="trainingPrograms" placeholder=" " name="trainingPrograms">
+        <label for="trainingPrograms">Training Programs / Workshops</label>
+    </div>
+    <div class="col-md-6 floating-label">
+        <input class="form-control" id="researchProjects" placeholder=" " name="researchProjects">
+        <label for="researchProjects">Research Projects (optional)</label>
+    </div>
+</div>
+<hr>
+<!-- ================= PROJECTS & PORTFOLIO ================= -->
+<h5>Projects & Portfolio</h5>
+<div class="section-progress">
+    <div class="progress-bar" id="projectsProgress"></div>
+</div>
+<div class="row g-3">
+    <div class="col-md-6 floating-label">
+        <input class="form-control" id="projectTitle" placeholder=" " name="projectTitle">
+        <label for="projectTitle">Project Title</label>
+    </div>
+    <div class="col-md-6 floating-label">
+        <input class="form-control" id="technologiesUsed" placeholder=" " name="technologiesUsed">
+        <label for="technologiesUsed">Technologies Used</label>
+    </div>
+    <div class="col-md-12 floating-label">
+        <textarea class="form-control" id="projectDescription" placeholder=" " name="projectDescription"></textarea>
+        <label for="projectDescription">Project Description</label>
+    </div>
+    <div class="col-md-6 floating-label">
+        <input class="form-control" id="githubLink" placeholder=" " name="githubLink">
+        <label for="githubLink">GitHub / Portfolio Link</label>
+    </div>
+    <div class="col-md-6 floating-label">
+        <input class="form-control" id="liveUrl" placeholder=" " name="liveUrl">
+        <label for="liveUrl">Live Project URL (optional)</label>
+    </div>
+</div>
+<hr>
+<!-- ================= CERTIFICATIONS ================= -->
+<h5>Certifications</h5>
+<div class="section-progress">
+    <div class="progress-bar" id="certificationsProgress"></div>
+</div>
+<div class="row g-3">
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="certificationName" placeholder=" " name="certificationName">
+        <label for="certificationName">Certification Name</label>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="issuingOrganization" placeholder=" " name="issuingOrganization">
+        <label for="issuingOrganization">Issuing Organization</label>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="yearOfCompletion" placeholder=" " name="yearOfCompletion" type="number">
+        <label for="yearOfCompletion">Year of Completion</label>
+    </div>
+    <div class="col-md-12 floating-label">
+        <input type="file" class="form-control" id="certificationFile" name="certificationFile" data-validation="required fileSize fileType" data-filesize="2048" data-filetype="pdf,doc,docx">
+        <label for="certificationFile">Upload Certification</label>
+        <div id="certificationFile_error" class="small text-danger" style="display:none;"></div>
+    </div>
+</div>
+<hr>
+<!-- ================= RESUME & DOCUMENTS ================= -->
+<h5>Resume & Documents</h5>
+<div class="section-progress">
+    <div class="progress-bar" id="documentsProgress"></div>
+</div>
+<div class="row g-3">
+    <div class="col-md-6 floating-label">
+        <input type="file" class="form-control" id="resume" name="resume" data-validation="required fileSize fileType" data-filesize="2048" data-filetype="pdf,doc,docx">
+        <label for="resume">Upload Resume</label>
+        <div id="resume_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-6 floating-label">
+        <input type="file" class="form-control" id="coverLetter" name="coverLetter" data-validation="fileSize fileType" data-filesize="2048" data-filetype="pdf,doc,docx">
+        <label for="coverLetter">Cover Letter</label>
+        <div id="coverLetter_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-6 floating-label">
+        <input type="file" class="form-control" id="photo" name="photo" data-validation="required fileSize fileType" data-filesize="512" data-filetype="jpg,jpeg,png">
+        <label for="photo">Photo</label>
+        <div id="photo_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-6 floating-label">
+        <input type="file" class="form-control" id="signature" name="signature" data-validation="fileSize fileType" data-filesize="512" data-filetype="jpg,jpeg,png">
+        <label for="signature">Signature</label>
+        <div id="signature_error" class="small text-danger" style="display:none;"></div>
+    </div>
+</div>
+<hr>
+<!-- ================= PLACEMENT PREFERENCES ================= -->
+<h5>Placement Preferences</h5>
+<div class="section-progress">
+    <div class="progress-bar" id="preferencesProgress"></div>
+</div>
+<div class="row g-3">
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="preferredJobRole" placeholder=" " name="preferredJobRole">
+        <label for="preferredJobRole">Preferred Job Role</label>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="preferredIndustry" placeholder=" " name="preferredIndustry">
+        <label for="preferredIndustry">Preferred Industry</label>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="preferredLocation" placeholder=" " name="preferredLocation">
+        <label for="preferredLocation">Preferred Location</label>
+    </div>
+
+    <div class="col-md-4 floating-label">
+        <select class="form-select" id="willingToRelocate" name="willingToRelocate">
+            <option value="" disabled selected>Willing to Relocate</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <label for="willingToRelocate">Willing to Relocate</label>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="expectedSalary" placeholder=" " name="expectedSalary">
+        <label for="expectedSalary">Expected Salary / CTC</label>
+    </div>
+    <div class="col-md-4 floating-label">
+        <select class="form-select" id="workType" name="workType">
+            <option value="" disabled selected>Work Type</option>
+            <option value="full-time">Full-time</option>
+            <option value="internship">Internship</option>
+            <option value="remote">Remote</option>
+        </select>
+        <label for="workType">Work Type</label>
+    </div>
+</div>
+<hr>
+<!-- ================= COMPLIANCE ================= -->
+<h5>Eligibility & Compliance</h5>
+<div class="section-progress">
+    <div class="progress-bar" id="complianceProgress"></div>
+</div>
+<div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" id="eligibilityCheck" name="eligibilityCheck">
+    <label class="form-check-label" for="eligibilityCheck">I meet eligibility criteria</label>
+</div>
+<div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" id="medicalDeclaration" name="medicalDeclaration">
+    <label class="form-check-label" for="medicalDeclaration">Medical Fitness Declaration</label>
+</div>
+<div class="floating-label">
+    <textarea class="form-control mt-2" id="gapYearDetails" placeholder=" " name="gapYearDetails"></textarea>
+    <label for="gapYearDetails">Gap Year Details (if any)</label>
+</div>
+<hr>
+<!-- ================= ACCOUNT & LINKS ================= -->
+<h5>Account Security & Links</h5>
+<div class="section-progress">
+    <div class="progress-bar" id="accountProgress"></div>
+</div>
+<div class="row g-3">
+    <div class="col-md-4 floating-label">
+        <input class="form-control" id="username" placeholder=" " name="username" data-validation="required min" data-min="3">
+        <label for="username">Username</label>
+        <div id="username_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input type="password" class="form-control" id="password" placeholder=" " name="password" data-validation="required strongPassword">
+        <label for="password">Password</label>
+        <div id="password_error" class="small text-danger" style="display:none;"></div>
+    </div>
+    <div class="col-md-4 floating-label">
+        <input type="password" class="form-control" id="confirmPassword" placeholder=" " name="confirmPassword" data-validation="required confirmPassword">
+        <label for="confirmPassword">Confirm Password</label>
+        <div id="confirmPassword_error" class="small text-danger" style="display:none;"></div>
+    </div>
+
+    <div class="col-md-6 floating-label">
+        <input class="form-control" id="linkedinProfile" placeholder=" " name="linkedinProfile">
+        <label for="linkedinProfile">LinkedIn Profile</label>
+    </div>
+    <div class="col-md-6 floating-label">
+        <input class="form-control" id="codingProfiles" placeholder=" " name="codingProfiles">
+        <label for="codingProfiles">GitHub / LeetCode / HackerRank</label>
+    </div>
+</div>
+<hr>
+<!-- ================= FINAL SUBMISSION ================= -->
+<div class="section-progress">
+    <div class="progress-bar" id="finalProgress"></div>
+</div>
+    <iframe src="terms_and_condition.html" width="100%" height="300px"></iframe>
+    <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="termsAgreement"
+                       data-bs-toggle="modal" data-bs-target="#termsModal">
+                <label class="form-check-label" for="termsAgreement"><h6> I Agree Terms & Conditions</h6></label>
+            </div>
+    <div class="text-center mt-4">
+    <button type="submit" class="btn btn-custom px-5 py-3" link="../student/profile.php">Register</button>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</style>
+>>>>>>> Stashed changes
 </body>
 
 </html>

@@ -69,7 +69,7 @@
                                                 <h6>Practice Resources</h6>
                                                 <button class="btn btn-sm btn-outline-primary mb-2">Coding Challenges</button>
                                                 <button class="btn btn-sm btn-outline-success mb-2">Practice Tests</button>
-                                                <button class="btn btn-sm btn-outline-warning">Video Tutorials</button>
+                                                <button class="btn btn-sm btn-outline-warning mb-2">Video Tutorials</button>
                                             </div>
                                         </div>
                                     </div>

@@ -1,10 +1,19 @@
 <?php
-if (!isset($_SESSION['user_logged_in']) || !$_SESSION['user_logged_in']) {
-    header('Location: ../auth/register.php');
-    exit();
-}
+// session_start();
+// if (!isset($_SESSION['user_logged_in']) || !$_SESSION['user_logged_in']) {
+//     header('Location: ../auth/register.php');
+//     exit();
+// }
 
-$user_data = $_SESSION['user_data'] ?? [];
+// $user_data = $_SESSION['user_data'] ?? [];
+// Mock user data for demo purposes
+$user_data = [
+    'full_name' => 'Demo Student',
+    'email' => 'demo@student.com',
+    'enrollment_no' => 'DEMO2024001',
+    'course' => 'Computer Science',
+    'semester' => '6'
+];
 $current_page = basename($_SERVER['PHP_SELF'], '.php');
 ?>
 
@@ -49,6 +58,17 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
 
     <!-- Sidebar Menu -->
     <nav class="sidebar-nav">
+        <div class="menu-section">
+            <div class="menu-section-title">
+                <i class="fas fa-home me-2"></i>Main
+            </div>
+            <a href="dashboard.php" class="menu-item <?php echo $current_page === 'dashboard' ? 'active' : ''; ?>">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+                <div class="menu-indicator"></div>
+            </a>
+        </div>
+
         <div class="menu-section">
             <div class="menu-section-title">
                 <i class="fas fa-user-circle me-2"></i>Profile

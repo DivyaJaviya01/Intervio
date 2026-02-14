@@ -1,11 +1,19 @@
 <?php
-session_start();
-if (!isset($_SESSION['user_logged_in']) || !$_SESSION['user_logged_in']) {
-    header('Location: ../auth/register.php');
-    exit();
-}
+// session_start();
+// if (!isset($_SESSION['user_logged_in']) || !$_SESSION['user_logged_in']) {
+//     header('Location: ../auth/register.php');
+//     exit();
+// }
 
-$user_data = $_SESSION['user_data'] ?? [];
+// $user_data = $_SESSION['user_data'] ?? [];
+// Mock user data for demo purposes
+$user_data = [
+    'fullName' => 'Demo Student',
+    'email' => 'demo@student.com',
+    'enrollmentNumber' => 'DEMO2024001',
+    'course' => 'Computer Science',
+    'semester' => '6'
+];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -274,6 +282,113 @@ $user_data = $_SESSION['user_data'] ?? [];
                     <div class="stat-number">3</div>
                     <div class="stat-label">Applications Sent</div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Announcements Section -->
+        <div class="content-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="mb-0"><i class="fas fa-bullhorn me-2"></i>Latest Announcements</h5>
+                <a href="#" class="text-primary text-decoration-none">View All →</a>
+            </div>
+            
+            <!-- Announcement 1 -->
+            <div class="announcement-item" style="border-left: 4px solid #10b981; background: #f0fdf4; padding: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <div class="fw-semibold text-success mb-1">
+                            🚀 Microsoft Drive - Last Date to Apply Extended
+                        </div>
+                        <div class="text-muted small mb-2">
+                            <i class="fas fa-calendar me-1"></i> Dec 10, 2024
+                            <span class="ms-3"><i class="fas fa-clock me-1"></i> 2:30 PM</span>
+                            <span class="ms-3"><i class="fas fa-user me-1"></i> Admin</span>
+                        </div>
+                        <div class="text-secondary">
+                            Good news! Microsoft has extended the last date to apply for their Software Developer position. Students can now apply until December 20, 2024. Don't miss this opportunity to work with one of the world's leading tech companies.
+                        </div>
+                    </div>
+                    <span class="badge bg-success">Published</span>
+                </div>
+            </div>
+
+            <!-- Announcement 2 -->
+            <div class="announcement-item" style="border-left: 4px solid #f59e0b; background: #fffbeb; padding: 1rem; margin-bottom: 1rem; border-radius: 8px;">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <div class="fw-semibold text-warning mb-1">
+                            📅 Placement Week Schedule Released
+                        </div>
+                        <div class="text-muted small mb-2">
+                            <i class="fas fa-calendar me-1"></i> Dec 8, 2024
+                            <span class="ms-3"><i class="fas fa-clock me-1"></i> 10:00 AM</span>
+                            <span class="ms-3"><i class="fas fa-user me-1"></i> Admin</span>
+                        </div>
+                        <div class="text-secondary">
+                            The complete schedule for Placement Week 2024 has been released. Check the detailed timetable for company presentations, interview slots, and venue information. Make sure to mark your calendars!
+                        </div>
+                    </div>
+                    <span class="badge bg-warning text-dark">Important</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notifications Section -->
+        <div class="content-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="mb-0"><i class="fas fa-bell me-2"></i>Your Notifications</h5>
+                <a href="#" class="text-primary text-decoration-none">View All →</a>
+            </div>
+            
+            <!-- Notification 1 -->
+            <div class="notification-item d-flex align-items-start p-3 border-bottom" style="background: #f8fafc; border-radius: 8px; margin-bottom: 0.5rem;">
+                <div class="notification-icon me-3" style="width: 40px; height: 40px; background: #dbeafe; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-check-circle text-primary"></i>
+                </div>
+                <div class="flex-grow-1">
+                    <div class="fw-semibold mb-1">Application Approved</div>
+                    <div class="text-muted small mb-1">
+                        Your application for Microsoft Software Developer position has been approved.
+                    </div>
+                    <div class="text-muted small">
+                        <i class="fas fa-clock me-1"></i> 2 hours ago
+                    </div>
+                </div>
+                <span class="badge bg-primary">Drive</span>
+            </div>
+
+            <!-- Notification 2 -->
+            <div class="notification-item d-flex align-items-start p-3 border-bottom" style="background: #f8fafc; border-radius: 8px; margin-bottom: 0.5rem;">
+                <div class="notification-icon me-3" style="width: 40px; height: 40px; background: #fef3c7; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-calendar-check text-warning"></i>
+                </div>
+                <div class="flex-grow-1">
+                    <div class="fw-semibold mb-1">Interview Scheduled</div>
+                    <div class="text-muted small mb-1">
+                        Your interview with Amazon is scheduled for Dec 15, 2024 at 10:00 AM.
+                    </div>
+                    <div class="text-muted small">
+                        <i class="fas fa-clock me-1"></i> 5 hours ago
+                    </div>
+                </div>
+                <span class="badge bg-warning text-dark">System</span>
+            </div>
+
+            <!-- Notification 3 -->
+            <div class="notification-item d-flex align-items-start p-3" style="background: #f8fafc; border-radius: 8px; margin-bottom: 0.5rem;">
+                <div class="notification-icon me-3" style="width: 40px; height: 40px; background: #dcfce7; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-credit-card text-success"></i>
+                </div>
+                <div class="flex-grow-1">
+                    <div class="fw-semibold mb-1">Payment Received</div>
+                    <div class="text-muted small mb-1">
+                        Your payment for Mock Aptitude Test has been successfully processed.
+                    </div>
+                    <div class="text-muted small">
+                        <i class="fas fa-clock me-1"></i> 1 day ago
+                    </div>
+                </div>
+                <span class="badge bg-success">Payment</span>
             </div>
         </div>
 

@@ -1,11 +1,19 @@
 <?php
-session_start();
-if (!isset($_SESSION['user_logged_in']) || !$_SESSION['user_logged_in']) {
-    header('Location: ../auth/register.php');
-    exit();
-}
+// session_start();
+// if (!isset($_SESSION['user_logged_in']) || !$_SESSION['user_logged_in']) {
+//     header('Location: ../auth/register.php');
+//     exit();
+// }
 
-$user_data = $_SESSION['user_data'] ?? [];
+// $user_data = $_SESSION['user_data'] ?? [];
+// Mock user data for demo purposes
+$user_data = [
+    'fullName' => 'Demo Student',
+    'email' => 'demo@student.com',
+    'enrollmentNumber' => 'DEMO2024001',
+    'course' => 'Computer Science',
+    'semester' => '6'
+];
 ?>
 <!DOCTYPE html>
 <html lang="en">
