@@ -16,78 +16,6 @@
     </div>
 </section>
 
-<!-- Announcements Section -->
-<section class="py-4 bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="alert alert-light border-info alert-dismissible fade show" role="alert" id="mainAnnouncements">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h5 class="alert-heading mb-0 text-info"><i class="fas fa-bullhorn me-2"></i>📢 Latest Announcements</h5>
-                        <button class="btn btn-sm btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#announcementContent" aria-expanded="true">
-                            <i class="fas fa-chevron-up" id="announcementToggle"></i>
-                        </button>
-                    </div>
-                    <hr class="border-info">
-                    <div class="collapse show" id="announcementContent">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <div class="flex-grow-1">
-                                        <strong class="text-success">🚀 Microsoft Drive - Last Date to Apply Extended</strong>
-                                        <div class="text-muted small mb-1">
-                                            <i class="fas fa-calendar me-1"></i> Dec 10, 2024
-                                            <span class="ms-3"><i class="fas fa-clock me-1"></i> 2:30 PM</span>
-                                        </div>
-                                        <div class="small">
-                                            Good news! Microsoft has extended the last date to apply for their Software Developer position. Students can now apply until December 20, 2024.
-                                        </div>
-                                    </div>
-                                    <span class="badge bg-success ms-2">Published</span>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <div class="flex-grow-1">
-                                        <strong class="text-warning">📅 Placement Week Schedule Released</strong>
-                                        <div class="text-muted small mb-1">
-                                            <i class="fas fa-calendar me-1"></i> Dec 8, 2024
-                                            <span class="ms-3"><i class="fas fa-clock me-1"></i> 10:00 AM</span>
-                                        </div>
-                                        <div class="small">
-                                            The complete schedule for Placement Week 2024 has been released. Check the detailed timetable for company presentations and interview slots.
-                                        </div>
-                                    </div>
-                                    <span class="badge bg-warning text-dark ms-2">Important</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const announcementToggle = document.getElementById('announcementToggle');
-    const announcementContent = document.getElementById('announcementContent');
-    
-    if (announcementToggle && announcementContent) {
-        announcementToggle.addEventListener('click', function() {
-            if (announcementContent.classList.contains('show')) {
-                announcementToggle.classList.remove('fa-chevron-up');
-                announcementToggle.classList.add('fa-chevron-down');
-            } else {
-                announcementToggle.classList.remove('fa-chevron-down');
-                announcementToggle.classList.add('fa-chevron-up');
-            }
-        });
-    }
-});
-</script>
-
 <!-- Filter Section -->
 <section class="py-5 bg-light">
     <div class="container">
@@ -553,7 +481,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 </style>
 
-<!-- Stats Section -->
+Stats Section
 <section class="py-5" style="background-color: #1e40af; color: white;">
     <div class="container">
         <div class="row text-center">

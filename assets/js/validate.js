@@ -4,11 +4,12 @@ $(document).ready(function () {
     var field = $(input);
     var value = field.val().trim();
     var errorfield = $("#" + field.attr("name") + "_error");
-    var validationType = field.data("validation");
+    // var validationType = field.data("validation");
+    var validationType = field.attr("data-validation");
     var minLength = field.data("min") || 0;
     var maxLength = field.data("max") || 9999;
     var numMin = field.data("num-min") || 0;
-    var numMax = field.data("num-max") || 999999999999;
+    var numMax = field.data("num-max") || 99999999999999999;
     var fileSize = field.data("filesize") || 0;
     var fileType = field.data("filetype") || "";
     let errorMessage = "";
@@ -21,14 +22,14 @@ $(document).ready(function () {
         errorMessage = "This field is required.";
       } else {
         // Only check other validations if field is not empty (or not required)
-        
+
         // Minimum length validation
-        if (validationType.includes("min") && value.length < minLength) {
+        if (validationType.includes("min") && value !== "" && value.length < minLength) {
           errorMessage = `This field must be at least ${minLength} characters long.`;
         }
 
         // Maximum length validation
-        if (validationType.includes("max") && value.length > maxLength) {
+        if (validationType.includes("max") && value !== "" && value.length > maxLength) {
           errorMessage = `This field must be at most ${maxLength} characters long.`;
         }
 
@@ -93,6 +94,14 @@ $(document).ready(function () {
           }
         }
 
+        // Phone number validation
+        if (validationType.includes("phone")) {
+          const phoneRegex = /^[\d\s\-\+\(\)]+$/;
+          if (value && !phoneRegex.test(value)) {
+            errorMessage = "Please enter a valid phone number.";
+          }
+        }
+
         // Dropdown selection validation
         if (validationType.includes("select") && value === "") {
           errorMessage = "Please select an option.";
@@ -133,10 +142,10 @@ $(document).ready(function () {
   });
 
   // Add click handler for submit buttons to trigger validation
-  $("button[type='submit']").on("click", function(e) {
+  $("button[type='submit']").on("click", function (e) {
     const form = $(this).closest("form");
     let isValid = true;
-    
+
     form.find("input,textarea,select").each(function () {
       validateInput(this);
       let errorfield = $("#" + $(this).attr("name") + "_error");
@@ -144,7 +153,7 @@ $(document).ready(function () {
         isValid = false;
       }
     });
-    
+
     if (!isValid) {
       e.preventDefault();
       // Focus on first invalid field
@@ -169,4 +178,7 @@ $(document).ready(function () {
       $(this).find("input.is-invalid, textarea.is-invalid, select.is-invalid").first().focus();
     }
   });
+  
+
+
 });

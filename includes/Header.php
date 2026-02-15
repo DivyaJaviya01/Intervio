@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intervio - RK University Placement Portal</title>
-    <!-- Bootstrap 5 CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 CSS Local -->
+    <link href="assets/css/css/bootstrap.min.css" rel="stylesheet">
     <!-- Animate.css CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Font Awesome for icons -->
@@ -137,7 +137,7 @@
                 
                 <!-- Right: Action Buttons -->
                 <div class="d-flex ">
-                    <a href="student/profile.php" class="btn btn-login me-2">Login</a>
+                    <a href="auth/login.php" class="btn btn-login me-2">Login</a>
                     <a href="auth/register.php" class="btn btn-signup">Sign Up</a>
                 </div>
             </div>

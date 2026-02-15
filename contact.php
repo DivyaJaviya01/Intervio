@@ -1,5 +1,9 @@
 <?php include 'includes/Header.php'; ?>
-
+<!-- Bootstrap 5 CSS Local -->
+<link href="assets/css/css/bootstrap.min.css" rel="stylesheet">
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/validate.js"></script>
+<script src="assets/js/js/bootstrap.bundle.min.js"></script>
 <!-- Hero Section -->
 <section class="hero-section" style="color: #000000; padding: 100px 0;">
     <div class="container text-center">
@@ -16,30 +20,34 @@
                 <div class="card border-0 shadow-lg">
                     <div class="card-body p-5">
                         <h3 class="text-center mb-4">Send us a Message</h3>
-                        <form>
+                        <form id="contactForm">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <label for="firstName" class="form-label">First Name</label>
-                                    <input type="text" class="form-control" id="firstName" required>
+                                    <label for="firstName" class="form-label" >First Name</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" required data-validation="required nameOnly" data-min="2" data-max="50">
+                                    <div id="firstName_error" class="text-danger small" style="display: none;"></div>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="lastName" class="form-label">Last Name</label>
-                                    <input type="text" class="form-control" id="lastName" required>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" required data-validation="required nameOnly" data-min="2" data-max="50">
+                                    <div id="lastName_error" class="text-danger small" style="display: none;"></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="email" class="form-label">Email Address</label>
-                                    <input type="email" class="form-control" id="email" required>
+                                    <input type="email" class="form-control" id="email" name="email" required data-validation="required email" data-max="100">
+                                    <div id="email_error" class="text-danger small" style="display: none;"></div>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="phone" class="form-label">Phone Number</label>
-                                    <input type="tel" class="form-control" id="phone">
+                                    <input type="tel" class="form-control" id="phone" name="phone" data-validation="required phone min max" data-min="10" data-max="10">
+                                    <div id="phone_error" class="text-danger small" style="display: none;"></div>
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <label for="subject" class="form-label">Subject</label>
-                                <select class="form-select" id="subject" required>
+                                <select class="form-select" id="subject" name="subject" required data-validation="required">
                                     <option value="">Select a subject</option>
                                     <option value="general">General Inquiry</option>
                                     <option value="support">Technical Support</option>
@@ -48,10 +56,12 @@
                                     <option value="feedback">Feedback</option>
                                     <option value="other">Other</option>
                                 </select>
+                                <div id="subject_error" class="text-danger small" style="display: none;"></div>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="5" required data-validation="required min" data-min="10" data-max="1000"></textarea>
+                                <div id="message_error" class="text-danger small" style="display: none;"></div>
                             </div>
                             <div class="mb-3">
                                 <div class="form-check">
@@ -60,9 +70,9 @@
                                         Subscribe to our newsletter for updates and tips
                                     </label>
                                 </div>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-primary btn-lg px-5">Send Message</button>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">Send Message</button>
+                                </div>
                             </div>
                         </form>
                     </div>
