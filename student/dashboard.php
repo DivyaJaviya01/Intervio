@@ -59,7 +59,7 @@ body {
         <div class="row align-items-center">
 
             <div class="col-md-2 text-center">
-                <img src="https://via.placeholder.com/130" class="profile-img">
+                <img src="../assets/images/woman.jpg" class="profile-img">
             </div>
 
             <div class="col-md-7">

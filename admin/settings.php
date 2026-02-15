@@ -55,15 +55,18 @@ include 'includes/sidebar.php';
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label class="form-label">Site Name</label>
-                                <input type="text" class="form-control" value="Intervio">
+                                <input type="text" class="form-control" name="siteName" value="Intervio" required data-validation="required nameOnly" data-min="2">
+                                <div id="siteName_error" class="text-danger small" style="display: none;"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Site URL</label>
-                                <input type="url" class="form-control" value="https://intervio.com">
+                                <input type="url" class="form-control" name="siteUrl" value="https://intervio.com" required data-validation="required url">
+                                <div id="siteUrl_error" class="text-danger small" style="display: none;"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Admin Email</label>
-                                <input type="email" class="form-control" value="admin@intervio.com">
+                                <input type="email" class="form-control" name="adminEmail" value="admin@intervio.com" required data-validation="required email">
+                                <div id="adminEmail_error" class="text-danger small" style="display: none;"></div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -104,25 +107,30 @@ include 'includes/sidebar.php';
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label class="form-label">SMTP Host</label>
-                                <input type="text" class="form-control" value="smtp.gmail.com">
+                                <input type="text" class="form-control" name="smtpHost" value="smtp.gmail.com" required data-validation="required min" data-min="3">
+                                <div id="smtpHost_error" class="text-danger small" style="display: none;"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">SMTP Port</label>
-                                <input type="number" class="form-control" value="587">
+                                <input type="number" class="form-control" name="smtpPort" value="587" required data-validation="required number" data-num-min="1" data-num-max="65535">
+                                <div id="smtpPort_error" class="text-danger small" style="display: none;"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">SMTP Username</label>
-                                <input type="email" class="form-control" value="noreply@intervio.com">
+                                <input type="email" class="form-control" name="smtpUsername" value="noreply@intervio.com" required data-validation="required email">
+                                <div id="smtpUsername_error" class="text-danger small" style="display: none;"></div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label class="form-label">SMTP Password</label>
-                                <input type="password" class="form-control" value="password123">
+                                <input type="password" class="form-control" name="smtpPassword" value="password123" required data-validation="required min" data-min="8">
+                                <div id="smtpPassword_error" class="text-danger small" style="display: none;"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Email From Name</label>
-                                <input type="text" class="form-control" value="Intervio Team">
+                                <input type="text" class="form-control" name="emailFromName" value="Intervio Team" required data-validation="required nameOnly" data-min="2">
+                                <div id="emailFromName_error" class="text-danger small" style="display: none;"></div>
                             </div>
                             <div class="mb-3">
                                 <div class="form-check">
@@ -144,15 +152,18 @@ include 'includes/sidebar.php';
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label class="form-label">Session Timeout (minutes)</label>
-                                <input type="number" class="form-control" value="30">
+                                <input type="number" class="form-control" name="sessionTimeout" value="30" required data-validation="required number" data-num-min="5" data-num-max="480">
+                                <div id="sessionTimeout_error" class="text-danger small" style="display: none;"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Max Login Attempts</label>
-                                <input type="number" class="form-control" value="5">
+                                <input type="number" class="form-control" name="maxLoginAttempts" value="5" required data-validation="required number" data-num-min="1" data-num-max="10">
+                                <div id="maxLoginAttempts_error" class="text-danger small" style="display: none;"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Password Min Length</label>
-                                <input type="number" class="form-control" value="8">
+                                <input type="number" class="form-control" name="passwordMinLength" value="8" required data-validation="required number" data-num-min="6" data-num-max="20">
+                                <div id="passwordMinLength_error" class="text-danger small" style="display: none;"></div>
                             </div>
                         </div>
                         <div class="col-md-6">

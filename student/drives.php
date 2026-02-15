@@ -86,7 +86,7 @@ body{
                 <p class="mb-2">Track and apply to upcoming placement opportunities</p>
             </div>
             <div class="col-md-4 text-end">
-                <button class="btn btn-light btn-lg">Browse All Drives</button>
+                <a href="../drives.php" class="btn btn-light btn-lg">Browse All Drives</a>
             </div>
         </div>
     </div>

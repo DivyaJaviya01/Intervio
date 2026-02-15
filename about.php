@@ -2,7 +2,7 @@
 
 <!-- Hero Section -->
 <section class="hero-section" style="color: #000000; padding: 100px 0;">
-    <div class="container text-center">
+    <div class="container text-center mt-5">
         <h1 class="display-3 fw-bold mb-4">About Intervio</h1>
         <p class="lead mb-5">Empowering students to achieve their dream careers through comprehensive placement preparation</p>
         <div class="row justify-content-center">
@@ -21,11 +21,11 @@
                 <div class="card border-0 shadow-lg h-100">
                     <div class="card-body p-4">
                         <div class="text-center mb-4">
-                            <div class="mission-icon bg-primary text-white rounded-circle p-4 mx-auto">
+                            <div class="mission-icon text-primary p-3 mx-auto">
                                 <i class="fas fa-bullseye fa-3x"></i>
                             </div>
                         </div>
-                        <h3 class="text-center mb-4">Our Mission</h3>
+                        <h3 class="text-center mb-4 fw-bold">Our Mission</h3>
                         <p class="mb-3">To provide comprehensive, accessible, and effective placement preparation resources that empower students to excel in their career journeys and secure positions in top-tier companies.</p>
                         <ul class="list-unstyled">
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Quality education for all students</li>
@@ -40,11 +40,11 @@
                 <div class="card border-0 shadow-lg h-100">
                     <div class="card-body p-4">
                         <div class="text-center mb-4">
-                            <div class="vision-icon bg-success text-white rounded-circle p-4 mx-auto">
+                            <div class="vision-icon text-success p-3 mx-auto">
                                 <i class="fas fa-eye fa-3x"></i>
                             </div>
                         </div>
-                        <h3 class="text-center mb-4">Our Vision</h3>
+                        <h3 class="text-center mb-4 fw-bold">Our Vision</h3>
                         <p class="mb-3">To become the most trusted and comprehensive placement preparation platform, transforming how students prepare for their professional careers and making quality career opportunities accessible to everyone.</p>
                         <ul class="list-unstyled">
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Global reach and impact</li>
@@ -70,7 +70,7 @@
                         <div class="feature-icon bg-warning text-white rounded-circle p-3 mx-auto mb-3">
                             <i class="fas fa-graduation-cap fa-2x"></i>
                         </div>
-                        <h4 class="mb-3">Expert Guidance</h4>
+                        <h4 class="mb-3 fw-bold">Expert Guidance</h4>
                         <p class="text-muted">Learn from industry experts and experienced professionals who provide insights into real-world interview scenarios and company expectations.</p>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                         <div class="feature-icon bg-info text-white rounded-circle p-3 mx-auto mb-3">
                             <i class="fas fa-laptop fa-2x"></i>
                         </div>
-                        <h4 class="mb-3">Interactive Learning</h4>
+                        <h4 class="mb-3 fw-bold">Interactive Learning</h4>
                         <p class="text-muted">Engage with interactive content, practice tests, and mock interviews that simulate real placement experiences and build confidence.</p>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                         <div class="feature-icon bg-success text-white rounded-circle p-3 mx-auto mb-3">
                             <i class="fas fa-chart-line fa-2x"></i>
                         </div>
-                        <h4 class="mb-3">Proven Results</h4>
+                        <h4 class="mb-3 fw-bold">Proven Results</h4>
                         <p class="text-muted">Join thousands of successful students who have secured their dream jobs in top companies with our comprehensive preparation approach.</p>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                         <div class="feature-icon bg-primary text-white rounded-circle p-3 mx-auto mb-3">
                             <i class="fas fa-clock fa-2x"></i>
                         </div>
-                        <h4 class="mb-3">24/7 Access</h4>
+                        <h4 class="mb-3 fw-bold">24/7 Access</h4>
                         <p class="text-muted">Study at your own pace with round-the-clock access to all resources, allowing you to prepare according to your schedule and preferences.</p>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                         <div class="feature-icon bg-danger text-white rounded-circle p-3 mx-auto mb-3">
                             <i class="fas fa-users fa-2x"></i>
                         </div>
-                        <h4 class="mb-3">Community Support</h4>
+                        <h4 class="mb-3 fw-bold">Community Support</h4>
                         <p class="text-muted">Connect with fellow students, share experiences, and learn together in our supportive community of aspiring professionals.</p>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                         <div class="feature-icon bg-secondary text-white rounded-circle p-3 mx-auto mb-3">
                             <i class="fas fa-trophy fa-2x"></i>
                         </div>
-                        <h4 class="mb-3">Success Tracking</h4>
+                        <h4 class="mb-3 fw-bold">Success Tracking</h4>
                         <p class="text-muted">Monitor your progress with detailed analytics and personalized feedback to continuously improve your preparation strategy.</p>
                     </div>
                 </div>

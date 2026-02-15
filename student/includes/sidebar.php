@@ -1,5 +1,4 @@
 <!-- SIDEBAR -->
-<link href="includes/sidebar.css" rel="stylesheet">
 <div class="sidebar p-0">
     <h4 class="text-center py-2 navbar-brand">Intervio</h4>
     

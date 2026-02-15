@@ -13,6 +13,12 @@
     width: 15%;
 }
 
+/* Main content offset for fixed sidebar */
+.main-content {
+    margin-left: 15%;
+    width: 85%;
+}
+
 /* Sidebar content area */
 .sidebar-content {
     flex: 1;
@@ -110,4 +116,17 @@
     letter-spacing: 0.5px;
     padding: 0;
     line-height: 1.2;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
 }

@@ -1,12 +1,7 @@
 <?php include 'includes/Header.php'; ?>
-<!-- Bootstrap 5 CSS Local -->
-<link href="assets/css/css/bootstrap.min.css" rel="stylesheet">
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/validate.js"></script>
-<script src="assets/js/js/bootstrap.bundle.min.js"></script>
 <!-- Hero Section -->
 <section class="hero-section" style="color: #000000; padding: 100px 0;">
-    <div class="container text-center">
+    <div class="container text-center mt-5">
         <h1 class="display-3 fw-bold mb-4">Contact Us</h1>
         <p class="lead mb-5">Get in touch with us for any questions, support, or partnership opportunities</p>
     </div>
@@ -295,5 +290,8 @@
         </div>
     </div>
 </section>
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/validate.js"></script>
 
 <?php include 'includes/Footer.php'; ?>

@@ -4,6 +4,7 @@ include 'includes/auth_check.php';
 include 'includes/header.php';
 ?>
 
+<div class="content-wrapper">
 <!-- Top Header -->
 <div class="top-header">
     <div>
@@ -125,6 +126,8 @@ include 'includes/header.php';
                 </div>
             </div>
         </div>
+</div>
+
 </div>
 
 <?php include 'includes/footer.php'; ?>

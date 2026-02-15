@@ -2,7 +2,7 @@
 
 <!-- Hero Section -->
 <section class="hero-section" style="color: #000000; padding: 100px 0;">
-    <div class="container text-center">
+    <div class="container text-center mt-5">
         <h1 class="display-3 fw-bold mb-4">Interview Preparation Hub</h1>
         <p class="lead mb-5">Master your interview skills with comprehensive resources and practice materials</p>
         <div class="row justify-content-center">
