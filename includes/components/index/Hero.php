@@ -21,10 +21,8 @@
                 </div>
             </div>
             <div class="col-lg-6 text-center">
-                <div style="width: 100%; height: 300px; background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border: 1px solid #e2e8f0;">
-                    <div>
-                        <img src="assets/images/chatgpt.png" alt="ChatGPT" style="max-width: 100%; max-height: 100%;">
-                    </div>
+                <div>
+                    <img src="assets/images/img.jpg" alt="ChatGPT" style="max-width: 100%; max-height: 100%;">
                 </div>
             </div>
         </div>
