@@ -23,8 +23,7 @@
             <div class="col-lg-6 text-center">
                 <div style="width: 100%; height: 300px; background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border: 1px solid #e2e8f0;">
                     <div>
-                        <h3 style="color: #000000;">RK University</h3>
-                        <p class="mb-0" style="color: #6b7280;">Placement Success Stories</p>
+                        <img src="" alt="">
                     </div>
                 </div>
             </div>
